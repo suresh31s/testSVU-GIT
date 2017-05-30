@@ -1,0 +1,1238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+elementFormDefault="qualified">
+	
+	<xs:element name="SITE_DOCUMENT">
+        <xs:complexType>
+			<xs:sequence>
+				<xs:element name="SITE_INSPECTION_INFORMATION">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="SITE_VISIT_REASON" type="xs:string"/>
+							<xs:element name="ON_VISIT_INSPECTOR_NAME" type="xs:string"/>
+							<xs:element name="ATC_OR_CONTRACTOR" type="xs:string"/>
+						</xs:all>	
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="SITE">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="SITE_ID" type="xs:integer"/>
+							<xs:element name="SITE_NUMBER" type="xs:integer"/>
+							<xs:element name="SITE_NAME" type="xs:string"/>
+							<xs:element name="COUNTRY_CODE" type="xs:string"/>
+							<xs:element name="LOGIN_USER_ID" type="xs:string"/>
+						</xs:all>	
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="VERSION_SECTION">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="VERSION_ID" type="xs:integer"/>
+							<xs:element name="VERSION_TYPE_ID" type="xs:integer"/>
+							<xs:element name="COUNTRY_CODE" type="xs:string"/>
+							<xs:element name="PHYSICAL_AUDIT_DATE" type="xs:string"/>
+							<xs:element name="PHYSICAL_AUDIT_TIME" type="xs:string"/>
+							<xs:element name="FIRST_SAVED_DATE" type="xs:string"/>
+							<xs:element name="LAST_SAVED_DATE" type="xs:string"/>
+							<xs:element name="CREATED_BY" type="xs:string"/>
+							<xs:element name="CREATION_DATE" type="xs:string"/>
+							<xs:element name="USER_TYPE" type="xs:string"/>
+						</xs:all>	
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="SITE_DETAILS">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="GENERAL_SITE_INFORMATION">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="SITE_NUMBER" type="xs:integer"/>
+										<xs:element name="SITE_NAME" type="xs:string"/>
+										<xs:element name="ADDRESS_911" type="xs:string"/>
+										<xs:element name="SITE_ADDRESS" type="xs:string"/>
+										<xs:element name="CITY" type="xs:string"/>
+										<xs:element name="STATE" type="xs:string"/>
+										<xs:element name="ZIP_CODE" type="xs:string"/>
+										<xs:element name="COUNTY" type="xs:string"/>
+										<xs:element name="DRIVING_DIRECTIONS" type="xs:string"/>
+										<xs:element name="SITE_ACCESS_COMBINATION" type="xs:integer"/>
+										<xs:element name="SPECIAL_ACCESS_INSTRUCTIONS" type="xs:string"/>
+										<xs:element name="OPERATIONAL_AREA" type="xs:string"/>
+										<xs:element name="FIELD_OPERATIONS_TECHNICIAN" type="xs:string"/>
+										<xs:element name="TERRITORY_SUPERVISOR" type="xs:string"/>
+										<xs:element name="ROM" type="xs:string"/>
+									</xs:all>	
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>	
+					</xs:complexType>	
+				</xs:element>	
+				<xs:element name="JOB_SAFETY_ANALYSIS">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="HAZMAT">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="GROUP" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="GROUP_ID" type="xs:integer"/>
+													<xs:element name="MATERIAL_ON_SITE" type="xs:string"/>
+													<xs:element name="INFORMATION_CHANGE" type="xs:string"/>
+													<xs:element name="MATERIAL_LOCATION" type="xs:string"/>
+													<xs:element name="CONTAINER_TYPE" type="xs:string"/>
+													<xs:element name="TYPE" type="xs:string"/>
+													<xs:element name="CONTAINER_COUNT" type="xs:integer"/>
+													<xs:element name="CONTAINER_LENGTH" type="xs:integer"/>
+													<xs:element name="CONTAINER_WIDTH" type="xs:integer"/>
+													<xs:element name="CONTAINER_HEIGHT" type="xs:integer"/>
+													<xs:element name="CONTAINER_VOLUME" type="xs:integer"/>
+													<xs:element name="COMMENT_ID" type="xs:integer"/>
+													<xs:element name="COMMENT_TYPE_ID" type="xs:integer"/>
+													<xs:element name="COMMENT" type="xs:string"/>
+												</xs:all>	
+											</xs:complexType>
+										</xs:element>	
+									</xs:sequence>	
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="ENVIRONMENTAL_SAFETY_COMPLIANCE">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="SITE_DEFECT_NOTICABLE" type="xs:string"/>
+										<xs:element name="DEFECT_PREVENT_VISIT_COMPLETION" type="xs:string"/>
+										<xs:element name="NOTICABLE_DEFECT_COMMENTS_ID" type="xs:integer"/>
+										<xs:element name="NOTICABLE_DEFECT_COMMENTS_TYPE_ID" type="xs:integer"/>
+										<xs:element name="NOTICABLE_DEFECT_COMMENTS" type="xs:string"/>
+										<xs:element name="BIRD_NEST_EXIST" type="xs:string"/>
+										<xs:element name="ELECTRIC_HAZARD" type="xs:string"/>
+									</xs:all>	
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="EMERGENCY_CONTACTS">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="HOSPITAL_NAME" type="xs:string"/>
+										<xs:element name="HOSPITAL_PHONE" type="xs:integer"/>
+										<xs:element name="HOSPITAL_ADDRESS" type="xs:string"/>
+										<xs:element name="HOSPITAL_ADDRESS_DIRECTION" type="xs:string"/>
+										<xs:element name="MUNICIPAL_POLICE_DEPARTMENT_NAME" type="xs:string"/>
+										<xs:element name="MUNICIPAL_POLICE_DEPARTMENT_PHONE" type="xs:integer"/>
+										<xs:element name="COUNTY_SHERIFF_NAME" type="xs:string"/>
+										<xs:element name="COUNTY_SHERIFF_PHONE" type="xs:integer"/>
+										<xs:element name="LOCAL_FIRE_DEPARTMENT_NAME" type="xs:string"/>
+										<xs:element name="LOCAL_FIRE_DEPARTMENT_PHONE" type="xs:integer"/>
+									</xs:all>	
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="OTHER_CONTACTS">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="GROUP" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="GROUP_ID" type="xs:integer"/>
+													<xs:element name="VENDOR_CONTACT_TYPE" type="xs:string"/>
+													<xs:element name="VENDOR_JOB_TITLE" type="xs:string"/>
+													<xs:element name="VENDOR_FIRST_NAME" type="xs:string"/>
+													<xs:element name="VENDOR_LAST_NAME" type="xs:string"/>
+													<xs:element name="VENDOR_COMPANY" type="xs:string"/>
+													<xs:element name="VENDOR_PHONE" type="xs:integer"/>
+													<xs:element name="VENDOR_MOBILE" type="xs:integer"/>
+													<xs:element name="VENDOR_EMAIL" type="xs:string"/>
+												</xs:all>	
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>	
+								</xs:complexType>					
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="UTILITIES">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ATC_SERVICE_POWER">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="ATC_METER_ON_SITE" type="xs:string"/>
+										<xs:element name="PROVIDER" type="xs:string"/>
+										<xs:element name="PROVIDER_PHONE" type="xs:integer"/>
+										<xs:element name="METER_NUMBER" type="xs:string"/>
+										<xs:element name="ACCOUNT_NUMBER" type="xs:string"/>
+										<xs:element name="AMPERAGE" type="xs:integer"/>
+										<xs:element name="PHASE_TYPE" type="xs:string"/>
+										<xs:element name="VOLTAGE" type="xs:integer"/>
+										<xs:element name="POWERS_LIGHTING" type="xs:string"/>
+										<xs:element name="POWERS_MONITORING" type="xs:string"/>
+										<xs:element name="POWERS_GENERATOR" type="xs:string"/>
+										<xs:element name="METER_LOCATION" type="xs:string"/>
+										<xs:element name="DISCONNECT_BREAKER_SIZE" type="xs:string"/>
+										<xs:element name="SLOTS_AVAILABLE_COUNT" type="xs:integer"/>
+										<xs:element name="FENCE_TO_UTILITY_POLE_DISTANCE" type="xs:integer"/>
+										<xs:element name="UTILITY_POLE_COUNT" type="xs:integer"/>
+										<xs:element name="TRANSFORMER_TYPE" type="xs:string"/>
+										<xs:element name="TRANSFORMER_VOLTS" type="xs:integer"/>
+										<xs:element name="TRANSFORMER_AMPS" type="xs:integer"/>
+										<xs:element name="TRANSFORMER_PHASE" type="xs:string"/>
+										<xs:element name="KVA_OF_TRANSFORMER" type="xs:integer"/>
+										<xs:element name="NOTES_ID" type="xs:integer"/>
+										<xs:element name="NOTES_TYPE_ID" type="xs:integer"/>
+										<xs:element name="NOTES" type="xs:string"/>
+									</xs:all>	
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="TENANT_POWER">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="TOWER" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="TOWER_ID" type="xs:integer"/>
+													<xs:element name="OTM_TOWER_NUMBER" type="xs:string" maxOccurs="1"/>
+													<xs:element name="TENANT_METER_ON_SITE" type="xs:string" maxOccurs="1"/>
+													<xs:element name="METER_USER" type="xs:string"/>
+													<xs:element name="METER_NUMBER" type="xs:string"/>
+													<xs:element name="VOLTS" type="xs:integer"/>
+													<xs:element name="AMPERE" type="xs:integer"/>
+													<xs:element name="ATC_METER" type="xs:string"/>
+													<xs:element name="METER_NUMBER" type="xs:string"/>
+													<xs:element name="SUB_METER_ON_SITE" type="xs:string"/>
+													<xs:element name="SUB_METER_NUMBER" type="xs:string"/>
+													<xs:element name="SUB_METER_MONITORED" type="xs:string"/>
+													<xs:element name="SUB_METER_NOTES_ID" type="xs:integer"/>
+													<xs:element name="SUB_METER_NOTES_TYPE_ID" type="xs:integer"/>
+													<xs:element name="SUB_METER_NOTES" type="xs:string"/>
+													<xs:element name="NOTES_ID" type="xs:integer"/>
+													<xs:element name="NOTES_TYPE_ID" type="xs:integer"/>
+													<xs:element name="NOTES" type="xs:string"/>	
+												</xs:sequence>	
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>	
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="TELCO">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="GROUP" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="GROUP_ID" type="xs:integer"/>
+													<xs:element name="AVAILABLE" type="xs:string"/>
+													<xs:element name="COMPANY_NAME" type="xs:string"/>
+													<xs:element name="COMPANY_PHONE" type="xs:integer"/>
+													<xs:element name="COMPANY_ACCOUNT_NUMBER" type="xs:string"/>
+													<xs:element name="PEDESTAL_POLE_NUMBER" type="xs:string"/>
+													<xs:element name="NOTES_ID" type="xs:integer"/>
+													<xs:element name="NOTES_TYPE_ID" type="xs:integer"/>
+													<xs:element name="NOTES" type="xs:string"/>
+												</xs:all>	
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>	
+								</xs:complexType>
+							</xs:element>	
+							<xs:element name="FIBER">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="GROUP" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="GROUP_ID" type="xs:integer"/>
+													<xs:element name="PRESENT" type="xs:string"/>
+													<xs:element name="OTHER_BACKHAUL_TYPE" type="xs:string"/>
+													<xs:element name="OPERATOR" type="xs:string"/>
+													<xs:element name="INSTALL_AUTHORIZED" type="xs:string"/>
+													<xs:element name="RUN_POSITION" type="xs:string"/>
+													<xs:element name="RUN_LOCATION" type="xs:string"/>
+													<xs:element name="TERMINATION_POINT" type="xs:string"/>
+													<xs:element name="TENANT" type="xs:string"/>
+													<xs:element name="STATUS" type="xs:string"/>
+												</xs:all>	
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>	
+								</xs:complexType>
+							</xs:element>	
+							<xs:element name="TRASH">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="SERVICE_REQUIRED" type="xs:string"/>
+										<xs:element name="COMPANY_NAME" type="xs:string"/>
+										<xs:element name="COMPANY_PHONE" type="xs:integer"/>
+										<xs:element name="COMPANY_ACCOUNT_NUMBER" type="xs:string"/>
+									</xs:all>	
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="SEWER">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="SERVICE_REQUIRED" type="xs:string"/>
+										<xs:element name="COMPANY_NAME" type="xs:string"/>
+										<xs:element name="COMPANY_PHONE" type="xs:integer"/>
+										<xs:element name="COMPANY_ACCOUNT_NUMBER" type="xs:string"/>
+									</xs:all>	
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="FUEL">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="SERVICE_REQUIRED" type="xs:string" maxOccurs="1"/>
+										<xs:element name="GROUP" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="GROUP_ID" type="xs:integer"/>
+													<xs:element name="TYPE" type="xs:string"/>
+													<xs:element name="PROVIDER_NAME" type="xs:string"/>
+													<xs:element name="PROVIDER_PHONE" type="xs:integer"/>
+													<xs:element name="PROVIDER_ACCOUNT_NUMBER" type="xs:string"/>
+												</xs:all>	
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>	
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>	
+				<xs:element name="SITE_ASSETS">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ACCESS_ROAD">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="EXIST" type="xs:string"/>
+										<xs:element name="CONDITION_MEET_STANDARD" type="xs:string"/>
+										<xs:element name="REPAIR_TYPE" type="xs:string"/>
+										<xs:element name="SHARED" type="xs:string"/>
+										<xs:element name="TYPE" type="xs:string"/>
+										<xs:element name="LENGTH" type="xs:integer"/>
+										<xs:element name="COMMENTS_ID" type="xs:integer"/>
+										<xs:element name="COMMENTS_TYPE_ID" type="xs:integer"/>
+										<xs:element name="COMMENTS" type="xs:string"/>
+									</xs:all>	
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="GATES_AND_FENCING">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="ACCESS_ROAD_GATE_EXIST" type="xs:string"/>
+										<xs:element name="GATE_TYPE" type="xs:string"/>
+										<xs:element name="GATE_CONDITION_MEET_STANDARD" type="xs:string"/>
+										<xs:element name="FENCING_WIRE_CONDITION_MEET_STANDARD" type="xs:string"/>
+										<xs:element name="FENCING_TYPE" type="xs:string"/>
+										<xs:element name="COMMENTS_ID" type="xs:integer"/>
+										<xs:element name="COMMENTS_TYPE_ID" type="xs:integer"/>
+										<xs:element name="COMMENTS" type="xs:string"/>
+										<xs:element name="ALL_ATC_LOCKS_FUNCTIONAL" type="xs:string"/>
+									</xs:all>	
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="COMPOUND">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="EXIST" type="xs:string"/>
+										<xs:element name="COMPOUND_GATE_COMBINATION" type="xs:string"/>
+										<xs:element name="SIZE" type="xs:string"/>
+										<xs:element name="GROUND_COVER" type="xs:string"/>
+										<xs:element name="WEED_BARRIER_PRESENT" type="xs:string"/>
+										<xs:element name="AREA_STABLE" type="xs:string"/>
+										<xs:element name="ADDITIONAL_GROUND_SPACE_AVAILABLE" type="xs:string"/>
+										<xs:element name="LARGEST_GROUND_SPACE_AVAILABLE" type="xs:string"/>
+										<xs:element name="LANDSCAPING_AND_MAINTENANCE_REQUIRED" type="xs:string"/>
+										<xs:element name="OUT_OF_SCOPE_WORK_REQUIRED" type="xs:string"/>
+										<xs:element name="MAJOR_MINOR_REPAIR" type="xs:string"/>
+										<xs:element name="COST_OF_REQUIRED_WORK_ESTIMATE" type="xs:string"/>
+										<xs:element name="OUT_OF_SCOPE_WORK_DESCRIPTION" type="xs:string"/>
+										<xs:element name="MEET_ATC_STANDARD" type="xs:string"/>
+										<xs:element name="SITE_GROUND_PROPERLY_PER_ATC_STANDARD" type="xs:string"/>
+										<xs:element name="COMMENTS_ID" type="xs:integer"/>
+										<xs:element name="COMMENTS_TYPE_ID" type="xs:integer"/>
+										<xs:element name="COMMENTS" type="xs:string"/>
+									</xs:all>	
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="SIGNAGE">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="ATC_SIGN_ON_SITE" type="xs:string"/>
+										<xs:element name="ATC_OWNED_SITE_POST" type="xs:string"/>
+										<xs:element name="FCC_ASR_NUMBER_REQUIRED_POST" type="xs:string"/>
+										<xs:element name="ATC_MANAGE_SIGN_POST" type="xs:string"/>
+										<xs:element name="RED_RF_WARNING_SIGN_POST" type="xs:string"/>
+										<xs:element name="YELLOW_RF_AREAS_SIGNS_POST" type="xs:string"/>
+										<xs:element name="YELLOW_CAUTION_CLIMBER_SIGN_POST" type="xs:string"/>
+										<xs:element name="ATC_SIGN_AT_ROAD_GATE_w_FCC" type="xs:string"/>
+										<xs:element name="NEPA_SIGNAGE_ON_FUEL_TANKS_GENERATOR" type="xs:string"/>
+										<xs:element name="SITE_MEET_SIGNAGE_REQUIREMENT" type="xs:string"/>
+									</xs:all>	
+								</xs:complexType>
+							</xs:element>		
+							<xs:element name="ATC_BUILDING">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="ON_SITE" type="xs:string" maxOccurs="1"/>
+										<xs:element name="GROUP" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="GROUP_ID" type="xs:integer"/>
+													<xs:element name="INFORMATION_CHANGED" type="xs:string"/>
+													<xs:element name="OWNED_ACTIVE" type="xs:string"/>
+													<xs:element name="MARKETABLE" type="xs:string"/>
+													<xs:element name="BUILDING_NUMBER" type="xs:integer"/>
+													<xs:element name="SQUARE_FOOT_SPACE_AVAILABLE_FOR_FUTURE_TENANTS" type="xs:integer"/>
+													<xs:element name="COMMENTS_ID" type="xs:integer"/>
+													<xs:element name="COMMENTS_TYPE_ID" type="xs:integer"/>
+													<xs:element name="COMMENTS" type="xs:string"/>
+													<xs:element name="ATC_BUILDING_INSPECTION">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="BUILDING_STRUCTURE" type="xs:string"/>
+																<xs:element name="BUILDING_TYPE" type="xs:string"/>
+																<xs:element name="ROOFING_TYPE" type="xs:string"/>
+																<xs:element name="ASBESTOS_OPERATION_MAINTENANCE_PLAN_POST" type="xs:string"/>
+																<xs:element name="BUILDING_SECURE" type="xs:string"/>
+																<xs:element name="CONDITION_MEET_ATC_STANDARD" type="xs:string"/>
+																<xs:element name="MAJOR_MINOR_REPAIR" type="xs:string"/>
+																<xs:element name="COMMENTS_ID" type="xs:integer"/>
+																<xs:element name="COMMENTS_TYPE_ID" type="xs:integer"/>
+																<xs:element name="COMMENTS" type="xs:string"/>
+															</xs:all>	
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="TENANT">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="INSIDE_ATC_BUILDING" type="xs:string" maxOccurs="1"/>
+																<xs:element name="GROUP" maxOccurs="unbounded">
+																	<xs:complexType>
+																		<xs:all>
+																			<xs:element name="GROUP_ID" type="xs:integer"/>
+																			<xs:element name="NAME" type="xs:string"/>
+																			<xs:element name="SPACE_ACCESSIBLE" type="xs:string"/>
+																			<xs:element name="ATC_PROVIDE_POWER" type="xs:string"/>
+																			<xs:element name="ATC_PROVIDE_BACKUP_POWER" type="xs:string"/>
+																			<xs:element name="ATC_PROVIDE_EQUIPMENT" type="xs:string"/>
+																			<xs:element name="ATC_EQUIPMENT_DESCRIPTION" type="xs:string"/>
+																			<xs:element name="CABINETS_RACKS_COUNT" type="xs:integer"/>
+																			<xs:element name="SQUARE_FEET_SPACE_OCCUPIED" type="xs:integer"/>
+																		</xs:all>	
+																	</xs:complexType>
+																</xs:element>	
+															</xs:sequence>	
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="CABLE_SUPPORT">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="SYSTEM_EXIST" type="xs:string" maxOccurs="1"/>
+																<xs:element name="GROUP" maxOccurs="unbounded">
+																	<xs:complexType>
+																		<xs:all>
+																			<xs:element name="GROUP_ID" type="xs:integer"/>
+																			<xs:element name="LADDER_WIDTH" type="xs:integer"/>
+																			<xs:element name="LADDER_OWNER" type="xs:string"/>
+																			<xs:element name="ROOM_FOR_MORE_CABLES" type="xs:string"/>
+																			<xs:element name="SPACE_FOR_FUTURE_TENANTS" type="xs:string"/>
+																			<xs:element name="COMMENTS_ID" type="xs:integer"/>
+																			<xs:element name="COMMENTS_TYPE_ID" type="xs:integer"/>
+																			<xs:element name="COMMENTS" type="xs:string"/>
+																			<xs:element name="OPEN_PORTS_AVAILABLE" type="xs:string"/>
+																			<xs:element name="OPEN_PORTS_COUNT" type="xs:integer"/>
+																		</xs:all>	
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>	
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="ATC_BUILDING_POWER">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="METER_LOCATION" type="xs:string"/>
+																<xs:element name="DISCONNECT_SIZE" type="xs:string"/>
+																<xs:element name="DISCONNECTS_PANELS_SERVICE_BUILDING_LIST" type="xs:string"/>
+																<xs:element name="EACH_PANEL_SOURCE" type="xs:string"/>
+																<xs:element name="EACH_PANEL_RATING" type="xs:string"/>
+																<xs:element name="EACH_PANEL_SCHEDULE" type="xs:string"/>
+																<xs:element name="ROOM_FOR_SUB_PANEL" type="xs:string"/>
+																<xs:element name="METER_LABELED_PER_STANDARD" type="xs:string"/>
+															</xs:all>	
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="FLOOR_TYPE">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="GROUP" maxOccurs="unbounded">
+																	<xs:complexType>
+																		<xs:all>
+																			<xs:element name="GROUP_ID" type="xs:integer"/>
+																			<xs:element name="TYPE" type="xs:string"/>
+																			<xs:element name="CONDITION" type="xs:string"/>
+																			<xs:element name="SQUARE_FOOT" type="xs:integer"/>
+																		</xs:all>	
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>	
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="WALL_TYPE">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="GROUP" maxOccurs="unbounded">
+																	<xs:complexType>
+																		<xs:all>
+																			<xs:element name="GROUP_ID" type="xs:integer"/>
+																			<xs:element name="TREATMENT" type="xs:string"/>
+																			<xs:element name="TREATMENT_CONDITION" type="xs:string"/>
+																			<xs:element name="TREATMENT_SQUARE_FOOT" type="xs:integer"/>
+																		</xs:all>	
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>	
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="CEILING_TYPE">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="GROUP" maxOccurs="unbounded">
+																	<xs:complexType>
+																		<xs:all>
+																			<xs:element name="GROUP_ID" type="xs:integer"/>
+																			<xs:element name="TYPE" type="xs:string"/>
+																			<xs:element name="CONDITION" type="xs:string"/>
+																			<xs:element name="SHOW_STAIN" type="xs:string"/>
+																			<xs:element name="SQUARE_FOOT" type="xs:integer"/>
+																		</xs:all>	
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>	
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="HVAC">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="GROUP" maxOccurs="unbounded">
+																	<xs:complexType>
+																		<xs:all>
+																			<xs:element name="GROUP_ID" type="xs:integer"/>
+																			<xs:element name="INFORMATION_CHANGE" type="xs:string"/>
+																			<xs:element name="NEED_MAINTENANCE" type="xs:string"/>
+																			<xs:element name="MANUFACTURER" type="xs:string"/>
+																			<xs:element name="MODEL_NUMBER" type="xs:string"/>
+																			<xs:element name="TYPE" type="xs:string"/>
+																			<xs:element name="TONNAGE_BTU" type="xs:integer"/>
+																			<xs:element name="LABEL_PER_ATC_STANDARD" type="xs:string"/>
+																			<xs:element name="OPERATIONAL" type="xs:string"/>
+																			<xs:element name="COMMENTS_ID" type="xs:integer"/>
+																			<xs:element name="COMMENTS_TYPE_ID" type="xs:integer"/>
+																			<xs:element name="COMMENTS" type="xs:string"/>
+																		</xs:all>	
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>	
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="BATTERY">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="GROUP" maxOccurs="unbounded">
+																	<xs:complexType>
+																		<xs:all>
+																			<xs:element name="GROUP_ID" type="xs:integer"/>
+																			<xs:element name="CONDITION_CHANGE" type="xs:string"/>
+																			<xs:element name="OWNER" type="xs:string"/>
+																			<xs:element name="LOCATION" type="xs:string"/>
+																			<xs:element name="TYPE" type="xs:string"/>
+																			<xs:element name="MANUFACTURER" type="xs:string"/>
+																			<xs:element name="MODEL_NUMBER" type="xs:string"/>
+																			<xs:element name="LENGTH" type="xs:integer"/>
+																			<xs:element name="WIDTH" type="xs:integer"/>
+																			<xs:element name="HEIGHT" type="xs:integer"/>
+																			<xs:element name="TOTAL_COUNT" type="xs:integer"/>
+																			<xs:element name="OPERATIONAL" type="xs:string"/>
+																			<xs:element name="CONDITION" type="xs:string"/>
+																			<xs:element name="CONDITION_COMMENTS_ID" type="xs:integer"/>
+																			<xs:element name="CONDITION_COMMENTS_TYPE_ID" type="xs:integer"/>
+																			<xs:element name="CONDITION_COMMENTS" type="xs:string"/>
+																			<xs:element name="COMMENTS_ID" type="xs:integer"/>
+																			<xs:element name="COMMENTS_TYPE_ID" type="xs:integer"/>
+																			<xs:element name="COMMENTS" type="xs:string"/>
+																		</xs:all>	
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>	
+														</xs:complexType>
+													</xs:element>
+												</xs:all>	
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>	
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TOWER">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TOWER" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="TOWER_ID" type="xs:integer"/>
+										<xs:element name="GENERAL_INFORMATION">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="OTM_TOWER_NUMBER" type="xs:string"/>
+													<xs:element name="TOWER_GETTING_INSPECTED" type="xs:string"/>
+													<xs:element name="TOWER_NAME" type="xs:string"/>
+													<xs:element name="ASSET_TENURE" type="xs:string"/>
+													<xs:element name="ASSET_CLASS" type="xs:string"/>
+													<xs:element name="ASSET_SOURCE" type="xs:string"/>
+													<xs:element name="ASSET_OWNER" type="xs:string"/>
+													<xs:element name="BUILD_TYPE" type="xs:string"/>
+													<xs:element name="PORTFOLIO" type="xs:string"/>
+													<xs:element name="TOWER_MARKETABLE" type="xs:string"/>
+													<xs:element name="CONFIRMED_FOUNDATION_HEIGHT" type="xs:integer"/>
+													<xs:element name="STRUCTURE_TYPE" type="xs:string"/>
+													<xs:element name="STRUCTURE_HEIGHT" type="xs:integer"/>
+													<xs:element name="HEIGHT_AGL" type="xs:integer"/>
+													<xs:element name="FAA_HEIGHT" type="xs:integer"/>
+													<xs:element name="METHOD_OF_MEASUREMENT" type="xs:string"/>
+													<xs:element name="AGL_OF_TOWER_GREATER_THAN_200" type="xs:string"/>
+													<xs:element name="COMMENTS_ID" type="xs:integer"/>
+													<xs:element name="COMMENTS_TYPE_ID" type="xs:integer"/>
+													<xs:element name="COMMENTS" type="xs:string"/>
+												</xs:all>	
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="TOWER_INSPECTION">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="VISIT_DATE" type="xs:string"/>
+													<xs:element name="VISIT_TYPE" type="xs:string"/>
+													<xs:element name="PROJECT_COMPLETION_DATE" type="xs:string"/>
+													<xs:element name="LEASE_SPACE_DISCREPANCY" type="xs:string"/>
+													<xs:element name="LEASE_SPACE_DISCREPANCY_LIST" type="xs:string"/>
+													<xs:element name="TOWER_HOT" type="xs:string"/>
+													<xs:element name="AM_DETUNING_SYSTEM_MEET_STANDARD" type="xs:string"/>
+													<xs:element name="AM_TENANT_FENCING_PRESENT" type="xs:string"/>
+													<xs:element name="GPS_SITERRA_COORDINATE_MATCH" type="xs:string"/>
+													<xs:element name="LATTITUDE" type="xs:string"/>
+													<xs:element name="LONGITUDE" type="xs:string"/>
+													<xs:element name="GPS_COMMENTS_ID" type="xs:integer"/>
+													<xs:element name="GPS_COMMENTS_TYPE_ID" type="xs:integer"/>
+													<xs:element name="GPS_COMMENTS" type="xs:string"/>
+													<xs:element name="FOUNDATION_DAMAGED" type="xs:string"/>
+													<xs:element name="TOWER_DAMAGED" type="xs:string"/>
+													<xs:element name="BASE_PLATE_DAMAGED" type="xs:string"/>
+													<xs:element name="SAFETY_CLIMB_PRESENT" type="xs:string"/>
+													<xs:element name="OBSTRUCTION_DEFECT_VISIBLE" type="xs:string"/>
+													<xs:element name="SAFETY_CLIMB_COMMENTS_ID" type="xs:integer"/>
+													<xs:element name="SAFETY_CLIMB_COMMENTS_TYPE_ID" type="xs:integer"/>
+													<xs:element name="SAFETY_CLIMB_COMMENTS" type="xs:string"/>
+													<xs:element name="TOWER_PAINTED" type="xs:string"/>
+													<xs:element name="TOWER_PAINT_COLOR" type="xs:string"/>
+													<xs:element name="PAINT_REQUIRED" type="xs:string"/>
+													<xs:element name="PAINT_NOT_REQUIRED_REASON" type="xs:string"/>
+													<xs:element name="COAX_PAINTED" type="xs:string"/>
+													<xs:element name="TOWER_COMPLIANCE_OUT" type="xs:string"/>
+													<xs:element name="ANY_BEACON_OBSTRUCTED" type="xs:string"/>
+													<xs:element name="CARRIER_OBSTRUCTING_BEACON" type="xs:string"/>
+													<xs:element name="CARRIER_INSTALL_RAD" type="xs:string"/>
+													<xs:element name="CARRIER_ANTENNA_TIP_HEIGHT" type="xs:integer"/>
+													<xs:element name="GUY_ANCHOR_PRESENT" type="xs:string"/>
+													<xs:element name="PRESENT_GUY_ANCHOR_COUNT" type="xs:integer"/>
+													<xs:element name="GUY_PATH_ACCESSIBLE" type="xs:string"/>
+													<xs:element name="GUY_ANCHOR_POINTS_FENCED" type="xs:string"/>
+													<xs:element name="GUY_ANCHOR_POINTS_ISSUES" type="xs:string"/>
+													<xs:element name="GUY_ANCHOR_COMMENTS_ID" type="xs:integer"/>
+													<xs:element name="GUY_ANCHOR_COMMENTS_TYPE_ID" type="xs:integer"/>
+													<xs:element name="GUY_ANCHOR_COMMENTS" type="xs:string"/>
+												</xs:all>	
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="PORTHOLES">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="GROUP" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="GROUP_ID" type="xs:integer"/>
+																<xs:element name="PORTHOLE_DETAILS_CHANGED" type="xs:string"/>
+																<xs:element name="ENTRY_PORTS_ON_TOWER" type="xs:string"/>
+																<xs:element name="ENTRY_PORTS_ON_TOWER_COUNT" type="xs:integer"/>
+																<xs:element name="ENTRY_PORT_HEIGHT_ON_TOWER" type="xs:integer"/>
+																<xs:element name="ENTRY_PORT_HEIGHT" type="xs:integer"/>
+																<xs:element name="ENTRY_PORT_WIDTH" type="xs:integer"/>
+																<xs:element name="ENTRY_PORT_ORIENTATION" type="xs:string"/>
+																<xs:element name="ENTRY_PORT_EMPTY" type="xs:string"/>
+																<xs:element name="PORTS_EXIT_ON_TOWER" type="xs:string"/>
+																<xs:element name="EXIT_PORTS_ON_TOWER_COUNT" type="xs:integer"/>
+																<xs:element name="EXIT_PORT_HEIGHT_ON_TOWER" type="xs:integer"/>
+																<xs:element name="EXIT_PORT_HEIGHT" type="xs:integer"/>
+																<xs:element name="EXIT_PORT_WIDTH" type="xs:integer"/>
+																<xs:element name="EXIT_PORT_ORIENTATION" type="xs:string"/>
+																<xs:element name="EXIT_PORT_EMPTY" type="xs:string"/>
+															</xs:all>	
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>	
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="DISCRETE_APPURTENANCES">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="GROUP" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="GROUP_ID" type="xs:integer"/>
+																<xs:element name="DISCRETE_APPURTENANCES_INFORMATION_CHANGED" type="xs:string"/>
+																<xs:element name="REMOVED" type="xs:string"/>
+																<xs:element name="TYPE" type="xs:string"/>
+																<xs:element name="MOUNT_HEIGHT" type="xs:integer"/>
+																<xs:element name="TIP_HEIGHT" type="xs:integer"/>
+																<xs:element name="BASE_HEIGHT" type="xs:integer"/>
+																<xs:element name="DESCRIPTION" type="xs:string"/>
+																<xs:element name="COMMENTS_ID" type="xs:integer"/>
+																<xs:element name="COMMENTS_TYPE_ID" type="xs:integer"/>
+																<xs:element name="COMMENTS" type="xs:string"/>
+															</xs:all>	
+														</xs:complexType>
+													</xs:element>	
+												</xs:sequence>	
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="TENANT_EQUIPMENT_CONTRACTED_OR_INSTALLED">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="GROUP" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="REMOVED" type="xs:string"/>
+																<xs:element name="ABANDONED" type="xs:string"/>
+																<xs:element name="DECOMMISSIONED" type="xs:string"/>
+																<xs:element name="RAD_HEIGHT" type="xs:integer"/>
+																<xs:element name="TYPE_CONTRACTED" type="xs:string"/>
+																<xs:element name="QTY_CONTRACTED" type="xs:string"/>
+																<xs:element name="MODEL_NUMBER" type="xs:string"/>
+																<xs:element name="LINE_QTY_CONTRACTED" type="xs:string"/>
+																<xs:element name="LINE_SIZE_CONTRACTED" type="xs:string"/>
+																<xs:element name="LINE_TYPE_CONTRACTED" type="xs:string"/>
+																<xs:element name="AZIMUTHS_CONTRACTED" type="xs:string"/>
+																<xs:element name="TEMP_EXP_DATE" type="xs:string"/>
+																<xs:element name="TEMP_EQUIPMENT" type="xs:string"/>
+																<xs:element name="GROUP_ID" type="xs:integer"/>
+																<xs:element name="TENANT_NAME" type="xs:string"/>
+																<xs:element name="HEIGHT" type="xs:integer"/>
+																<xs:element name="TYPE_INSTALLED" type="xs:string"/>
+																<xs:element name="QTY_INSTALLED" type="xs:string"/>
+																<xs:element name="HEIGHT_DIMENSION" type="xs:integer"/>
+																<xs:element name="WIDTH_DIMENSION" type="xs:integer"/>
+																<xs:element name="DEPTH_DIMENSION" type="xs:integer"/>
+																<xs:element name="LINE_QTY_INSTALLED" type="xs:string"/>
+																<xs:element name="LINE_SIZE_INSTALLED" type="xs:string"/>
+																<xs:element name="LINE_TYPE_INSTALLED" type="xs:string"/>
+																<xs:element name="MOUNT_QTY" type="xs:integer"/>
+																<xs:element name="MOUNT_TYPE" type="xs:string"/>
+																<xs:element name="AZIMUTHS_INSTALLED" type="xs:string"/>
+																<xs:element name="MEASUREMENT_METHOD" type="xs:string"/>
+																<xs:element name="TENANT_EQUIPMENT_NOTES_ID" type="xs:integer"/>
+																<xs:element name="TENANT_EQUIPMENT_NOTES_TYPE_ID" type="xs:integer"/>
+																<xs:element name="TENANT_EQUIPMENT_NOTES" type="xs:string"/>
+															</xs:all>	
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>	
+											</xs:complexType>
+										</xs:element>	
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>	
+				<xs:element name="ATC_MONITORED_EQUIPMENT">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TOWER" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="TOWER_ID" type="xs:string"/>
+										<xs:element name="LIGHTING">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="LIGHTING_INFORMATION_CHANGED" type="xs:string"/>
+													<xs:element name="OTM_TOWER_NUMBER" type="xs:string"/>
+													<xs:element name="INSTALLED_HARDWARE_STYLE" type="xs:string"/>
+													<xs:element name="CONFIGURED_OPERATE_STYLE" type="xs:string"/>
+													<xs:element name="OPERATE_STYLE_FAA_REQUIRED" type="xs:string"/>
+													<xs:element name="SYSTEM_MANUFACTURER" type="xs:string"/>
+													<xs:element name="SYSTEM_MODEL_NUMBER" type="xs:string"/>
+													<xs:element name="INSPECTION_TYPE" type="xs:string"/>
+													<xs:element name="LAST_INSPECTION_DATE" type="xs:string"/>
+													<xs:element name="NEXT_INSPECTION_DATE" type="xs:string"/>
+													<xs:element name="MASTER_CONTROLLER_MODEL_NUMBER" type="xs:string"/>
+													<xs:element name="MASTER_CONTROLLER_SERIAL_NUMBER" type="xs:string"/>
+													<xs:element name="MASTER_CONTROLLER_INSTALL_DATE" type="xs:string"/>
+													<xs:element name="CONTROLLER_MODEL_NUMBER" type="xs:string"/>
+													<xs:element name="CONTROLLER_SERIAL_NUMBER" type="xs:string"/>
+													<xs:element name="CONTROLLER_INSTALL_DATE" type="xs:string"/>
+													<xs:element name="FLASH_HEAD_MODEL_NUMBER" type="xs:string"/>
+													<xs:element name="FLASH_HEAD_SERIAL_NUMBER" type="xs:string"/>
+													<xs:element name="FLASH_HEAD_INSTALL_DATE" type="xs:string"/>
+													<xs:element name="FLASH_HEAD_MOUNT_HEIGHT" type="xs:integer"/>
+													<xs:element name="FLASH_HEAD_ACTUAL_MOUNT_HEIGHT" type="xs:string"/>
+													<xs:element name="COMMENTS_ID" type="xs:integer"/>
+													<xs:element name="COMMENTS_TYPE_ID" type="xs:integer"/>
+													<xs:element name="COMMENTS" type="xs:string"/>
+													<xs:element name="LIGHTING_LEVEL">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="GROUP" maxOccurs="unbounded">
+																	<xs:complexType>
+																		<xs:all>
+																			<xs:element name="GROUP_ID" type="xs:integer"/>
+																			<xs:element name="OTM_TOWER_NUMBER" type="xs:string"/>
+																			<xs:element name="LIGHTING_INFORMATION_CHANGED" type="xs:string"/>
+																			<xs:element name="NUMBER" type="xs:integer"/>
+																			<xs:element name="HARDWARE_STYLE_INSTALLED" type="xs:string"/>
+																			<xs:element name="LEVEL_NUMBER" type="xs:integer"/>
+																			<xs:element name="SYSTEM_MANUFACTURER" type="xs:string"/>
+																			<xs:element name="MARKER_TIER_NUMBER" type="xs:integer"/>
+																			<xs:element name="MARKER_HEIGHT" type="xs:integer"/>
+																			<xs:element name="MARKER_ACTUAL_HEIGHT" type="xs:integer"/>
+																			<xs:element name="MARKER_MODEL_NUMBER" type="xs:string"/>
+																			<xs:element name="MARKER_POWER" type="xs:string"/>
+																			<xs:element name="MARKER_INSTALL_DATE" type="xs:string"/>
+																			<xs:element name="MARKER_SERIAL_NUMBER_1" type="xs:string"/>
+																			<xs:element name="MARKER_SERIAL_NUMBER_2" type="xs:string"/>
+																			<xs:element name="MARKER_SERIAL_NUMBER_3" type="xs:string"/>
+																			<xs:element name="MARKER_SERIAL_NUMBER_4" type="xs:string"/>
+																			<xs:element name="FLASH_HEAD_CONTROLLER_TIER_NUMBER" type="xs:string"/>
+																			<xs:element name="FLASH_HEAD_MOUNT_HEIGHT" type="xs:integer"/>
+																			<xs:element name="FLASH_HEAD_ACTUAL_MOUNT_HEIGHT" type="xs:integer"/>
+																			<xs:element name="A_CONTROLLER_MODEL_NUMBER" type="xs:string"/>
+																			<xs:element name="A_CONTROLLER_SERIAL_NUMBER" type="xs:string"/>
+																			<xs:element name="A_CONTROLLER_INSTALL_DATE" type="xs:string"/>
+																			<xs:element name="A_FLASH_HEAD_MODEL_NUMBER" type="xs:string"/>
+																			<xs:element name="A_FLASH_HEAD_SERIAL_NUMBER" type="xs:string"/>
+																			<xs:element name="A_FLASH_HEAD_INSTALL_DATE" type="xs:string"/>
+																			<xs:element name="B_CONTROLLER_MODEL_NUMBER" type="xs:string"/>
+																			<xs:element name="B_CONTROLLER_SERIAL_NUMBER" type="xs:string"/>
+																			<xs:element name="B_CONTROLLER_INSTALL_DATE" type="xs:string"/>
+																			<xs:element name="B_FLASH_HEAD_MODEL_NUMBER" type="xs:string"/>
+																			<xs:element name="B_FLASH_HEAD_SERIAL_NUMBER" type="xs:string"/>
+																			<xs:element name="B_FLASH_HEAD_INSTALL_DATE" type="xs:string"/>
+																			<xs:element name="C_CONTROLLER_MODEL_NUMBER" type="xs:string"/>
+																			<xs:element name="C_CONTROLLER_SERIAL_NUMBER" type="xs:string"/>
+																			<xs:element name="C_CONTROLLER_INSTALL_DATE" type="xs:string"/>
+																			<xs:element name="C_FLASH_HEAD_MODEL_NUMBER" type="xs:string"/>
+																			<xs:element name="C_FLASH_HEAD_SERIAL_NUMBER" type="xs:string"/>
+																			<xs:element name="C_FLASH_HEAD_INSTALL_DATE" type="xs:string"/>
+																			<xs:element name="STATUS" type="xs:string"/>
+																		</xs:all>	
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>	
+														</xs:complexType>
+													</xs:element>	
+												</xs:all>	
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="LIGHTING_INSPECTION">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="VISIT_DATE" type="xs:string"/>
+													<xs:element name="OTM_TOWER_NUMBER" type="xs:string"/>
+													<xs:element name="VISIT_TYPE" type="xs:string"/>
+													<xs:element name="PROJECT_COMPLETION_DATE" type="xs:string"/>
+													<xs:element name="NOC_TECH_NAME" type="xs:string"/>
+													<xs:element name="NOC_TICKET_NUMBER" type="xs:string"/>
+													<xs:element name="NOC" type="xs:string"/>
+													<xs:element name="NOC_PHONE" type="xs:integer"/>
+													<xs:element name="COMPLETE" type="xs:string"/>
+												</xs:all>	
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="FUNCTIONALITY_VERIFICATION">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="OTM_TOWER_NUMBER" type="xs:string"/>
+													<xs:element name="LIGHTING_CABLES_MOUNT_SECURED" type="xs:string"/>
+													<xs:element name="GROUND_CONNECTIONS_SECURE" type="xs:string"/>
+													<xs:element name="CABINETS_MOUNT_SECURE" type="xs:string"/>
+													<xs:element name="CONTROLLER_LOCATION" type="xs:string"/>
+													<xs:element name="MONITOR_LOCATION" type="xs:string"/>
+													<xs:element name="POWER_SOURCE" type="xs:string"/>
+													<xs:element name="PAINT_COLOR_MEET_SPECIFICATION" type="xs:string"/>
+													<xs:element name="PHOTOCELL_MOUNT_SECURE" type="xs:string"/>
+													<xs:element name="PHOTOCELL_CABLE_ROUTED_SECURE" type="xs:string"/>
+													<xs:element name="PHOTOCELL_ORIENTATION_IN_NORTH" type="xs:string"/>
+													<xs:element name="CONTROLLER_COMPONENTS_CLEAN_DRY" type="xs:string"/>
+													<xs:element name="MARK_INSIDE_CONTROLLER" type="xs:string"/>
+													<xs:element name="CAPACITOR_CONDITION_GOOD" type="xs:string"/>
+													<xs:element name="ALARM_LIGHT_ILLUMINATED" type="xs:string"/>
+													<xs:element name="INSULATION_WIRE_CONDITION_GOOD" type="xs:string"/>
+													<xs:element name="VERIFY_BATTERY_VOLTAGE" type="xs:string"/>
+													<xs:element name="BATTERY_POWER_ON" type="xs:string"/>
+													<xs:element name="BATTERY_POWER_OFF" type="xs:string"/>
+												</xs:all>	
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>	
+								</xs:complexType>
+							</xs:element>	
+							<xs:element name="MONITORING">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="GROUP" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="GROUP_ID" type="xs:integer"/>
+													<xs:element name="MONITORING_INFORMATION_CHANGED" type="xs:string"/>
+													<xs:element name="SITE_HAS_MONITORING" type="xs:string"/>
+													<xs:element name="EQUIPMENT_MANUFACTURER" type="xs:string"/>
+													<xs:element name="EQUIPMENT_LOCATION" type="xs:string"/>
+													<xs:element name="EQUIPMENT_POWER_METER" type="xs:string"/>
+													<xs:element name="WEAK_SIGNAL_KIT_INSTALL" type="xs:string"/>
+													<xs:element name="MONITORED_BY_NOC" type="xs:string"/>
+													<xs:element name="BACKHAUL_TYPE" type="xs:string"/>
+													<xs:element name="BACKHAUL_PROVIDER" type="xs:string"/>
+													<xs:element name="POTS_NUMBER" type="xs:integer"/>
+													<xs:element name="IP_ADDRESS" type="xs:string"/>
+													<xs:element name="MODERN_IMEI_NUMBER" type="xs:string"/>
+													<xs:element name="SIM_CARD_ICCID" type="xs:string"/>
+													<xs:element name="WWAN_PHONE_NUMBER" type="xs:integer"/>
+													<xs:element name="DRY_CONTACT_MONITORING_ONLY" type="xs:string"/>
+													<xs:element name="DRY_CONTACT_MONITORING" type="xs:string"/>
+													<xs:element name="LIGHT_MONITORED" type="xs:string"/>
+													<xs:element name="GENERATOR_MONITORED" type="xs:string"/>
+													<xs:element name="SHELTER_DOORS_MONITORED" type="xs:string"/>
+													<xs:element name="HVAC_TEMPERATURE_MONITORED" type="xs:string"/>
+													<xs:element name="POWER_MONITORED" type="xs:string"/>
+													<xs:element name="SERIAL_AMPLIFIERS_PRESENT_COUNT" type="xs:integer"/>
+													<xs:element name="SERIAL_AMPLIFIERS_ON_EQUIPMENT_1" type="xs:integer"/>
+													<xs:element name="SERIAL_AMPLIFIERS_ON_EQUIPMENT_2" type="xs:integer"/>
+													<xs:element name="SERIAL_AMPLIFIERS_ON_EQUIPMENT_3" type="xs:integer"/>
+													<xs:element name="ETHERNET_ADAPTERS_PRESENT_COUNT" type="xs:integer"/>
+													<xs:element name="ETHERNET_ADAPTERS_ON_EQUIPMENT_1" type="xs:integer"/>
+													<xs:element name="ETHERNET_ADAPTERS_ON_EQUIPMENT_2" type="xs:integer"/>
+													<xs:element name="ETHERNET_ADAPTERS_ON_EQUIPMENT_3" type="xs:integer"/>
+													<xs:element name="COMMENTS_ID" type="xs:integer"/>
+													<xs:element name="COMMENTS_TYPE_ID" type="xs:integer"/>
+													<xs:element name="COMMENTS" type="xs:string"/>
+												</xs:all>	
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>	
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="GENERATOR">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="GENERATOR_GENERAL_INFORMATION">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="ATC_GENERATOR_CHANGED" type="xs:string"/>
+													<xs:element name="ATC_GENERATOR" type="xs:string"/>
+													<xs:element name="NUMBER" type="xs:string"/>
+													<xs:element name="ASSET_STATUS" type="xs:string"/>
+													<xs:element name="CLASSIFICATION" type="xs:string"/>
+													<xs:element name="MANUFACTURE_DATE" type="xs:string"/>
+													<xs:element name="MOUNT" type="xs:string"/>
+													<xs:element name="MANUFACTURER" type="xs:string"/>
+													<xs:element name="MODEL" type="xs:string"/>
+													<xs:element name="SERIAL_NUMBER" type="xs:string"/>
+													<xs:element name="OUTPUT_UNIT_MEASURE" type="xs:string"/>
+													<xs:element name="PHASE" type="xs:string"/>
+													<xs:element name="VOLTAGE" type="xs:integer"/>
+													<xs:element name="AMPERAGE" type="xs:integer"/>
+													<xs:element name="ENGINE_MAKE" type="xs:string"/>
+													<xs:element name="ENGINE_MODEL" type="xs:string"/>
+													<xs:element name="ENGINE_SERIAL_NUMBER" type="xs:string"/>
+													<xs:element name="ENGINE_OUTPUT" type="xs:string"/>
+													<xs:element name="METER_READING" type="xs:integer"/>
+													<xs:element name="POE_INJECTOR_INSTALLED" type="xs:string"/>
+													<xs:element name="BREAKERS_INSTALLED" type="xs:string"/>
+													<xs:element name="OPEN_BREAKER_POSITIONS" type="xs:string"/>
+												</xs:all>	
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="ATS_CROSSOVER_SWITCH">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="GROUP" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="GROUP_ID" type="xs:integer"/>
+																<xs:element name="ATS_CROSSOVER_SWITCH_AVAILABLE" type="xs:string"/>
+																<xs:element name="SWITCH_INFORMATION_CHANGED" type="xs:string"/>
+																<xs:element name="ATC_GENERATOR_NUMBER" type="xs:string"/>
+																<xs:element name="MAKE" type="xs:string"/>
+																<xs:element name="MODEL" type="xs:string"/>
+																<xs:element name="SERIAL_NUMBER" type="xs:string"/>
+																<xs:element name="SERVICE_PHASE_TYPE" type="xs:string"/>
+																<xs:element name="SERVICE_VOLTAGE" type="xs:string"/>
+																<xs:element name="SERVICE_AMPERAGE" type="xs:string"/>
+																<xs:element name="CUSTOMER_CONNECTED" type="xs:string"/>
+																<xs:element name="NUMBER" type="xs:string"/>
+																<xs:element name="COMMENTS_ID" type="xs:integer"/>
+																<xs:element name="COMMENTS_TYPE_ID" type="xs:integer"/>
+																<xs:element name="COMMENTS" type="xs:string"/>
+															</xs:all>	
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>	
+											</xs:complexType>
+										</xs:element>	
+										<xs:element name="GENERATOR_BATTERIES">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="GROUP" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="GROUP_ID" type="xs:integer"/>
+																<xs:element name="BATTERY_NOT_AVAILABLE" type="xs:string"/>
+																<xs:element name="BATTERY_INFORMATION_CHANGED" type="xs:string"/>
+																<xs:element name="LOCATION" type="xs:string"/>
+																<xs:element name="TYPE" type="xs:string"/>
+																<xs:element name="MANUFACTURER" type="xs:string"/>
+																<xs:element name="MODEL_NUMBER" type="xs:string"/>
+																<xs:element name="LENGTH" type="xs:string"/>
+																<xs:element name="WIDTH" type="xs:string"/>
+																<xs:element name="HEIGHT" type="xs:string"/>
+																<xs:element name="COUNT" type="xs:integer"/>
+																<xs:element name="OPERATIONAL" type="xs:string"/>
+																<xs:element name="CONDITION" type="xs:string"/>
+															</xs:all>	
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>	
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="GENERATOR_FUEL_TANK">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="GROUP">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="GROUP_ID" type="xs:integer"/>
+																<xs:element name="AVAILABLE" type="xs:string"/>
+																<xs:element name="INFORMATION_CHANGED" type="xs:string"/>
+																<xs:element name="OPERATIONAL" type="xs:string"/>
+																<xs:element name="TYPE" type="xs:string"/>
+																<xs:element name="CAPACITY" type="xs:integer"/>
+																<xs:element name="LENGTH" type="xs:string"/>
+																<xs:element name="WIDTH" type="xs:string"/>
+																<xs:element name="HEIGHT" type="xs:string"/>
+																<xs:element name="GAUGE_READING" type="xs:integer"/>
+																<xs:element name="FUEL_TYPE" type="xs:string"/>
+																<xs:element name="FUEL_IN_TANK" type="xs:string"/>
+																<xs:element name="COMMENTS_ID" type="xs:integer"/>
+																<xs:element name="COMMENTS_TYPE_ID" type="xs:integer"/>
+																<xs:element name="COMMENTS" type="xs:string"/>
+															</xs:all>	
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>	
+											</xs:complexType>
+										</xs:element>
+									</xs:all>	
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="NON_GENERATOR_FUEL_TANK">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="GROUP" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="GROUP_ID" type="xs:integer"/>
+													<xs:element name="AVAILABLE" type="xs:string"/>
+													<xs:element name="INFORMATION_CHANGED" type="xs:string"/>
+													<xs:element name="LOCATION" type="xs:string"/>
+													<xs:element name="STATUS" type="xs:string"/>
+													<xs:element name="TYPE" type="xs:string"/>
+													<xs:element name="CAPACITY" type="xs:integer"/>
+													<xs:element name="LENGTH" type="xs:string"/>
+													<xs:element name="WIDTH" type="xs:string"/>
+													<xs:element name="HEIGHT" type="xs:string"/>
+													<xs:element name="GAUGE_READING" type="xs:integer"/>
+													<xs:element name="FUEL_TYPE" type="xs:string"/>
+													<xs:element name="FUEL_IN_TANK" type="xs:string"/>
+													<xs:element name="COMMENTS_ID" type="xs:integer"/>
+													<xs:element name="COMMENTS_TYPE_ID" type="xs:integer"/>
+													<xs:element name="COMMENTS" type="xs:string"/>
+												</xs:all>	
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>	
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TENANT_GROUND_EQUIPMENT">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TOWER">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="TOWER_ID" type="xs:integer"/>
+										<xs:element name="TENANT_STRUCTURE_CONTRACTED">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="GROUP" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="GROUP_ID" type="xs:integer"/>
+																<xs:element name="TENANT_NAME" type="xs:string"/>
+																<xs:element name="GROUND_SPACE_PURPOSE" type="xs:string"/>
+																<xs:element name="HEIGHT" type="xs:integer"/>
+																<xs:element name="WIDTH" type="xs:integer"/>
+																<xs:element name="LENGTH" type="xs:integer"/>
+																<xs:element name="NOTES_ID" type="xs:integer"/>
+																<xs:element name="NOTES_TYPE_ID" type="xs:integer"/>
+																<xs:element name="NOTES" type="xs:string"/>
+															</xs:all>	
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>	
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="TENANT_STRUCTURE_INSTALLED">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="INFORMATION_CHANGED" type="xs:string"/>
+													<xs:element name="GROUP" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="GROUP_ID" type="xs:integer"/>
+																<xs:element name="REMOVED" type="xs:string"/>
+																<xs:element name="DECOMMISSIONED" type="xs:string"/>
+																<xs:element name="TENANT_NAME" type="xs:string"/>
+																<xs:element name="GROUND_SPACE_PURPOSE" type="xs:string"/>
+																<xs:element name="ATC_ACCESS" type="xs:string"/>
+																<xs:element name="INSTALLED_HEIGHT" type="xs:integer"/>
+																<xs:element name="INSTALLED_WIDTH" type="xs:integer"/>
+																<xs:element name="INSTALLED_LENGTH" type="xs:integer"/>
+																<xs:element name="NOTES_ID" type="xs:integer"/>
+																<xs:element name="NOTES_TYPE_ID" type="xs:integer"/>
+																<xs:element name="NOTES" type="xs:string"/>
+															</xs:all>	
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>	
+											</xs:complexType>
+										</xs:element>	
+										<xs:element name="TENANT_GENERATOR_CONTRACTED">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="GROUP" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="GROUP_ID" type="xs:integer"/>
+																<xs:element name="TENANT_NAME" type="xs:string"/>
+																<xs:element name="COMMENTS_ID" type="xs:integer"/>
+																<xs:element name="COMMENTS_TYPE_ID" type="xs:integer"/>
+																<xs:element name="COMMENTS" type="xs:string"/>
+																<xs:element name="FUEL_TYPE" type="xs:string"/>
+																<xs:element name="HEIGHT" type="xs:integer"/>
+																<xs:element name="WIDTH" type="xs:string"/>
+																<xs:element name="LENGTH" type="xs:integer"/>
+															</xs:all>	
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>	
+											</xs:complexType>
+										</xs:element>	
+										<xs:element name="TENANT_GENERATOR_INSTALLED">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="INFORMATION_CHANGED" type="xs:string"/>
+													<xs:element name="GROUP" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="GROUP_ID" type="xs:integer"/>
+																<xs:element name="REMOVED" type="xs:string"/>
+																<xs:element name="TENANT_NAME" type="xs:string"/>
+																<xs:element name="LOCATION" type="xs:string"/>
+																<xs:element name="TYPE" type="xs:string"/>
+																<xs:element name="MODEL" type="xs:string"/>
+																<xs:element name="SERIAL_NUMBER" type="xs:string"/>
+																<xs:element name="COMMENTS_ID" type="xs:integer"/>
+																<xs:element name="COMMENTS_TYPE_ID" type="xs:integer"/>
+																<xs:element name="COMMENTS" type="xs:string"/>
+																<xs:element name="FUEL_TYPE" type="xs:string"/>
+																<xs:element name="INSTALLED_HEIGHT" type="xs:integer"/>
+																<xs:element name="INSTALLED_WIDTH" type="xs:integer"/>
+																<xs:element name="INSTALLED_LENGTH" type="xs:integer"/>
+															</xs:all>	
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>	
+										<xs:element name="TENANT_BATTERY">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="ON_SITE" type="xs:string"/>
+													<xs:element name="GROUP" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="GROUP_ID" type="xs:integer"/>
+																<xs:element name="REMOVED" type="xs:string"/>
+																<xs:element name="TENANT_NAME" type="xs:string"/>
+																<xs:element name="LOCATION" type="xs:string"/>
+																<xs:element name="TYPE" type="xs:string"/>
+																<xs:element name="MANUFACTURER" type="xs:string"/>
+																<xs:element name="MODEL_NUMBER" type="xs:string"/>
+																<xs:element name="HEIGHT" type="xs:integer"/>
+																<xs:element name="WIDTH" type="xs:integer"/>
+																<xs:element name="LENGTH" type="xs:integer"/>
+																<xs:element name="COUNT" type="xs:integer"/>
+															</xs:all>	
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>	
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="TENANT_FUEL_TANK">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="ON_SITE" type="xs:string"/>
+													<xs:element name="GROUP" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="GROUP_ID" type="xs:integer"/>
+																<xs:element name="REMOVED" type="xs:string"/>
+																<xs:element name="TENANT_NAME" type="xs:string"/>
+																<xs:element name="LOCATION" type="xs:string"/>
+																<xs:element name="TYPE" type="xs:string"/>
+																<xs:element name="CAPACITY" type="xs:integer"/>
+																<xs:element name="HEIGHT" type="xs:integer"/>
+																<xs:element name="WIDTH" type="xs:integer"/>
+																<xs:element name="LENGTH" type="xs:integer"/>
+																<xs:element name="FUEL_TYPE" type="xs:string"/>
+																<xs:element name="COMMENTS_ID" type="xs:integer"/>
+																<xs:element name="COMMENTS_TYPE_ID" type="xs:integer"/>
+																<xs:element name="COMMENTS" type="xs:string"/>
+															</xs:all>	
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>	
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>	
+					</xs:complexType>	
+				</xs:element>
+			</xs:sequence>	
+		</xs:complexType>	
+	</xs:element>
+	
+</xs:schema>	

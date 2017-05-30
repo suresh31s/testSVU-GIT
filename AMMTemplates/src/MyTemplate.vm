@@ -1,0 +1,7 @@
+<html>
+    <body>
+       <h3>  Test Notification </h3>
+       <hr/>
+       <p> This is a test notification from $name for Asset Manager Mobile </p>
+    </body>
+</html>

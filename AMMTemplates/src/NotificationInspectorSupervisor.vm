@@ -1,0 +1,30 @@
+<html>
+<head> <title>Notification</title> </head>
+<body>
+<table border="1" cellpadding="3" cellspacing="0" width="800">
+<tbody align="center" style="font-family:verdana; color:purple; background-color:pink">
+<tr>
+<td width="40%">Inspection Question</td>
+<td width="10%">Answer</td>
+<td width="50%">Comments</td>
+</tr>
+</tbody>
+<tbody align="center" style="font-family:verdana; color:blue">
+#if ($defectsPreventsOfVisit == "Yes" || $defectsPreventsOfVisit == "YES")
+<tr>
+<td width="40%">Do the defects prevent the completion of your visit?</td>
+<td width="10%">Yes</td>
+<td width="50%">$notDefectsComments</td>
+</tr>
+#end
+#if ($baseInsVisibleDefects == "Yes" || $baseInsVisibleDefects == "YES")
+<tr>
+<td width="40%">From base inspection are there any visible obstructions or defects with the safety climb?</td>
+<td width="10%">Yes</td>
+<td width="50%">$baseVisibleDefectComment</td>
+</tr>
+#end
+</tbody>
+</table>
+</body>
+</html>

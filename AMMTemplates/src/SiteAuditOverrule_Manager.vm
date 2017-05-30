@@ -1,0 +1,35 @@
+<html>
+	<body>
+		<h3 align="center">  Asset Manager Mobile Overrule Request </h3>
+		<hr/>
+                <p align="center">
+                <b>$userName</b> has requested an overrule for the following:<br/><br/>
+                <table border="1" align="center">
+                <tr>
+                    <td> <b> Site Number    </b> </td>
+                    <td> <b> Site Name      </b> </td>
+                    <td> <b> Page(s)        </b> </td>
+                </tr>
+                #set ($row =  $overruleValues.split("\^") )
+                #foreach ($rowelement in $row)
+                    <tr>
+                    #set ($col =  $rowelement.split("\~") )
+                    #foreach ($colelement in $col)
+                        <td>$colelement</td>
+                    #end
+                    </tr>
+                #end
+                </table>
+                <br/><br/>
+                
+                Please click <a href="$urlAMLogin">click here</a> to log into Asset Manager.
+		</p>
+		<br/>
+		
+		<br/><br/><br/><br/><br/><br/><br/><br/>
+		<hr/>
+		<p>
+		This is an auto-generated email. Please do not reply to this email id. <br>
+		</p>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+	<body>
+		<h3 align="center"> OnSite Access Request </h3>
+		<hr/>
+
+		<p align="left">
+
+                <b>$!userFirstName $!userLastName</b> has requested access to OnSite. <br/><br/>
+
+                Please click <a id="aVerifyEmail" href='$urlAMLoginApproval?country=$country&username=$username'>here</a> to Approve the <b>$!userFirstName $!userLastName</b>. <br/><br/>
+			
+		</p>
+		<br/>
+		
+		<br/><br/><br/><br/><br/><br/><br/><br/>
+		<hr/>
+		<p>
+		This is an auto-generated email regarding the status of your case. Please do not reply to this e-mail. <br/>
+		Your case has been reviewed and addressed.
+		</p>
+	</body>
+</html>

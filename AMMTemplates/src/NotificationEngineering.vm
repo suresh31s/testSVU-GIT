@@ -1,0 +1,46 @@
+<html>
+<head> <title>Notification</title> </head>
+<body>
+<h3>  Tower Number - $otmNumber  </h3>
+<table border="1" cellpadding="3" cellspacing="0" width="800">
+<tbody align="center" style="font-family:verdana; color:purple; background-color:pink">
+<tr>
+<td width="40%">Inspection Question</td>
+<td width="10%">Answer</td>
+<td width="50%">Comments</td>
+</tr>
+</tbody>
+<tbody align="center" style="font-family:verdana; color:blue">
+#if ($isFoundationDamaged == "Yes" || $isFoundationDamaged == "YES")
+<tr>
+<td width="40%">Is Foundation damaged (cracked, spalling, movement detected)?</td>
+<td width="10%">Yes</td>
+<td width="50%">For further clarification please contact reporting Technician</td>
+</tr>
+#end
+#if ($isTowerDamaged == "Yes" || $isTowerDamaged == "YES")
+<tr>
+<td width="40%">Tower damaged - any visible damage from ground inspection (Bent, twisted, out of plumb)?</td>
+<td width="10%">Yes</td>
+<td width="50%">For further clarification please contact reporting Technician</td>
+</tr>
+#end
+#if ($isBasePlateDamaged == "Yes" || $isBasePlateDamaged == "YES")
+<tr>
+<td width="40%">Base Plate Welds Damaged/In Poor Condition (cracked, corroded)?</td>
+<td width="10%">Yes</td>
+<td width="50%">For further clarification please contact reporting Technician</td>
+</tr>
+#end
+#if ($guyAnchorConcerns == "Yes" || $guyAnchorConcerns == "YES")
+<tr>
+<td width="40%">Guy anchor points concerns / issues?</td>
+<td width="10%">Yes</td>
+<td width="50%">$guyAnchorComments</br>
+</td>
+</tr>
+#end
+</tbody>
+</table>
+</body>
+</html>

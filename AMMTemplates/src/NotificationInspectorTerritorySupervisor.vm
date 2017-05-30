@@ -1,0 +1,7 @@
+<html>
+    <body>
+       <h3> Notification </h3>
+       <hr/>
+       <p> The site inspection form for asset number $assetNumber has not been synchronized back to the Onsite application within the 2 day expiration period.</p>
+    </body>
+</html>

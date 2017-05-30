@@ -1,0 +1,48 @@
+<html>
+<head> <title>Notification</title> </head>
+<body>
+<h3>  Tower Number - $otmNumber  </h3>
+<table border="1" cellpadding="3" cellspacing="0" width="800">
+<tbody align="center" style="font-family:verdana; color:purple; background-color:pink">
+<tr>
+<td width="40%">Inspection Question</td>
+<td width="10%">Answer</td>
+<td width="50%">Comments</td>
+</tr>
+</tbody>
+<tbody align="center" style="font-family:verdana; color:blue">
+#if ($colorPaintMeetSpec == "No" || $colorPaintMeetSpec == "NO")
+<tr>
+<td width="40%">Does the current paint color meet specifications? (If required, use FAA Color Chart)</td>
+<td width="10%">No</td>
+<td width="50%">Please open NOTAM for out of compliance paint condition on tower</td>
+</tr>
+#end
+#if ($towerAGLGreater200 == "Yes" || $towerAGLGreater200 == "YES")
+<tr>
+<td width="40%">Is the oveall AGL of the tower greater than 200' and not lit</td>
+<td width="10%">Yes</td>
+<td width="50%">Request  NOC to open  NOTAM.</td>
+</tr>
+#end
+#if ($towerOutOfCompliance == "Yes" || $towerOutOfCompliance == "YES")
+<tr>
+<td width="40%">If no, is tower out of compliance?</td>
+<td width="10%">Yes</td>
+<td width="50%">Omission of or condition of coax paint is out of complaince</td>
+</tr>
+#end
+#if ($beaconsObsByAntennas == "Yes" || $beaconsObsByAntennas == "YES")
+<tr>
+<td width="40%">Are any beacons obstructed by antennas or other appurtenances?</td>
+<td width="10%">Yes</td>
+<td width="50%">Carrier obstructing beacon  - $carrierObsBeacon </br>
+Carrier installed RAD  - $carrierInsRAD </br>
+Carrier Antenna Tip Height  - $carrierAntTipHeight </br>
+</td>
+</tr>
+#end
+</tbody>
+</table>
+</body>
+</html>

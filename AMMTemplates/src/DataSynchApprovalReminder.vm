@@ -1,0 +1,22 @@
+<html>
+	<body>
+		<h3 align="center"> Asset Manager Mobile Audit Approval Reminder </h3>
+		<hr/>
+
+		<p align="center">
+
+		This is a reminder that the following site audits are still awaiting your approval:<br/>
+                <b>$!siteNumbers</b>   <br/><br/>
+
+               Please <a href="$urlAMLogin">click here</a> to log into Asset Manager. <br/>
+		</p>
+		<br/>
+		
+		<br/><br/><br/><br/><br/><br/><br/><br/>
+		<hr/>
+		<p>
+		This is an auto-generated email regarding the status of your case. Please do not reply to this e-mail. <br/>
+		Your case has been reviewed and addressed.
+		</p>
+	</body>
+</html>

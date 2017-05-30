@@ -1,0 +1,47 @@
+<html>
+<head> <title>Notification</title> </head>
+<body>
+<table border="1" cellpadding="3" cellspacing="0" width="800">
+<tbody align="center" style="font-family:verdana; color:purple; background-color:pink">
+<tr>
+<td width="40%">Inspection Question</td>
+<td width="10%">Answer</td>
+<td width="50%">Comments</td>
+</tr>
+</tbody>
+<tbody align="center" style="font-family:verdana; color:blue">
+#if ($userType1 == "VIP1")
+<tr>
+<td width="40%">Does the current paint color meet specifications? (If required, use FAA Color Chart)</td>
+<td width="10%">No</td>
+<td width="50%">Please open NOTAM for out of compliance paint condition on tower</td>
+</tr>
+#end
+#if ($userType2 == "VIP2")
+<tr>
+<td width="40%">Is the oveall AGL of the tower greater than 200' and not lit</td>
+<td width="10%">Yes</td>
+<td width="50%">Request  NOC to open  NOTAM.</td>
+</tr>
+#end
+#if ($userType3 == "VIP3")
+<tr>
+<td width="40%">If no, is tower out of compliance?</td>
+<td width="10%">Yes</td>
+<td width="50%">Omission of or condition of coax paint is out of complaince</td>
+</tr>
+#end
+#if ($userType4 == "VIP4")
+<tr>
+<td width="40%">Are any beacons obstructed by antennas or other appurtenances?</td>
+<td width="10%">Yes</td>
+<td width="50%">Carrier obstructing beacon  - $userFirstName </br>
+Carrier installed RAD $userLastName </br>
+Carrier Antenna Tip Height $userCompanyName </br>
+</td>
+</tr>
+#end
+</tbody>
+</table>
+</body>
+</html>

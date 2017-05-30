@@ -1,0 +1,14 @@
+<html>
+	<body>
+		<h3 align="center"> Asset Manager Mobile Account Reactivation Request  </h3>
+		<hr/>
+
+		<p align="left">
+
+                <b>$!userFirstName $!userLastName</b> from <b> $!userCompanyName </b> has requested access to Asset Manager Mobile. <br/><br/>
+                
+                Please click <a id="aAccountExpiry" href='$urlAMLogin'>here</a> to log into Asset Manager. <br/> <br/>
+
+		</p>
+	</body>
+</html>

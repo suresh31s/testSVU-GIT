@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<lovValueFieldsType xmlns:xsi="http://www.atc.com/2001/XMLSchema-instance">
+
+	<lovValueField>
+		<lookup_type>LOV_US_STRUCTURE_TYPE</lookup_type>
+		<lookup_values>Monopole_822,Guyed_830,SST_123,Flagpole_223,Water Tower_837</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_HAZMAT_CONTAINER_TYPE</lookup_type>
+		<lookup_values>Bucket_1234,Drum_2345,Gas Cylinder_3456,Jugs_4567,Other_5678</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_HAZMAT_TYPE</lookup_type>
+		<lookup_values>Antifreeze_6789,Compressed Gas_7890,Halon_8901,Paint_9012,Solvent_124,Other_1241</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_VENDOR_CONTACT_TYPE</lookup_type>
+		<lookup_values>Ground Maintenance-Contracted_1242,Ground Maintenance-Non Contracted_1243,Plowing_1244,Lighting_1245,Generator-Contracted_1246,Generator-Non Contracted_1247,HVAC_1248,Broadcast_1249</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_MAIN_DISCONNECT_BREAK_SIZE</lookup_type>
+		<lookup_values>100 amp_1250,200 amp_1251,400 amp_1252,800 amp_1253</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_TRANSFORMER_TYPE</lookup_type>
+		<lookup_values>pad mount_1254,pole mount_1255</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_TRANSFORMER_PHASE</lookup_type>
+		<lookup_values>Single Phase_1256,Three Phase_1257</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_TRANSFORMER_KVA</lookup_type>
+		<lookup_values>25_1258,50_1259,75_1260,100_1261,150_1262,225_1263,300_1264,500_1265,750_1266,1000_1267</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_TENANT_METER_USER</lookup_type>
+		<lookup_values>User1_1268,User2_1269,User3_1270,User4_1271,Other_1272,Unknown_1273</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_FIBER_OPERATOR</lookup_type>
+		<lookup_values>Operator1_1274,Operator2_1275,Operator3_1276</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_FIBER_RUN_POSITION</lookup_type>
+		<lookup_values>Position1_1277,Position2_1278</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_FIBER_RUN_LOCATION</lookup_type>
+		<lookup_values>Location1_1279,Location2_1280,Location3_1281</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_FIBER_TERMINATION_POINT</lookup_type>
+		<lookup_values>Point1_1282,Point2_1283,Point3_1284</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_FIBER_STATUS</lookup_type>
+		<lookup_values>Status1_1285,Status2_1286,Status3_1287</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_FUEL_TYPE</lookup_type>
+		<lookup_values>Diesel_1288,Natural Gas_1289</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_ACCESS_ROAD_TYPE</lookup_type>
+		<lookup_values>gravel_1290,dirt_1291,paved_1292,parking lot_1293,asphalt_1294</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_ACCESS_ROAD_GATE_TYPE</lookup_type>
+		<lookup_values>gravel_1295,dirt_1296,paved_1297,parking lot_1298,asphalt_1299</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_FENCING_TYPE</lookup_type>
+		<lookup_values>Chain Link_1300,Wood_1301,PVC_1302,Vinyl_1303,Cast Iron_1304,Other_1305</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_COMPOUND_GROUND_COVER</lookup_type>
+		<lookup_values>gravel_1306,paved_1307,dirt_1308,grass_1309</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_OUT_SCOPE_WORK</lookup_type>
+		<lookup_values>Tree Removal_1310,Tree trim_1311,folage overhanging assets_1312,acreage maintenance_1313,dumping trash removal_1314,heavy landscaping_1315,bush hogging required_1316,fire break clearing (CA only)_1317</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_ATC_BUILDING_STRUCTURE</lookup_type>
+		<lookup_values>Single Story-No basement_1318,Single Story-With basement_1319,Two Story-No basement_1320,Two Story-With basement_1321,Other_1322</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_ATC_BUILDING_TYPE</lookup_type>
+		<lookup_values>Poured Concrete_1323,Metal_1324,Wood Frame_1325,Concrete Block_1326,Other_1327</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_ATC_BUILDING_ROOF_TYPE</lookup_type>
+		<lookup_values>Foam_1328,Membrane_1329,Metal_1330,Membrane w/pavers_1331,Tar-Gravel_1332,Composition (Rolled or Shingled)_1333,Other_1334</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_TENANT_NAME</lookup_type>
+		<lookup_values>Tenant1_1335,Tenant2_1336,Tenant_1337,Other_1338</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_CABLE_LADDER_OWNER</lookup_type>
+		<lookup_values>ATC_1339,Tenant_1340,Unknown_1341,Other_1342</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_POWER_METER_LOCATION</lookup_type>
+		<lookup_values>Location1_1343,Location2_1344,Location3_1345</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_ATC_BUILDING_FLOOR_TYPE</lookup_type>
+		<lookup_values>Concrete_1346,Painted Concrete_1347,Square Vinyl Tiles_1348,Other_1349</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_ATC_BUILDING_FLOOR_CONDITION</lookup_type>
+		<lookup_values>Damaged_1350,Significantly Damaged_1351,Good-Floor Tiles Intact_1352</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_WALL_COVER_TREATMENT</lookup_type>
+		<lookup_values>Textured Coating_1353,Concrete Block_1354,Painted Block_1355,Other_1356</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_WALL_COVER_TREATMENT_CONDITION</lookup_type>
+		<lookup_values>Damaged_1357,Significantly Damaged_1358,Good_1359</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_CEILING_TYPE</lookup_type>
+		<lookup_values>Concrete_1360,Drop Ceiling_1361,Sheetrock_1362,Glued Ceiling Tile_1363,Metal_1364,Other_1365</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_CEILING_CONDITION</lookup_type>
+		<lookup_values>Damaged_1366,Significantly Damaged_1367,Good_1368</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_HVAC_MANUFACTURER</lookup_type>
+		<lookup_values>Bard_1369,Carrier_1370,Crispaire_1371,Marvair_1372,Other_1373</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_HVAC_TYPE</lookup_type>
+		<lookup_values>Split System_1374,Wall Mount_1375,Window Unit_1376,Other_1377</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_BATTERY_OWNER</lookup_type>
+		<lookup_values>Owner1_1378,Owner2_1379,Owner3_1380</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_BATTERY_LOCATION</lookup_type>
+		<lookup_values>Cabinet in building_1381,Rack in room suite_1382,Caged in-building suite_1383,Other_1384</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_BATTERY_TYPE</lookup_type>
+		<lookup_values>Gel Cell_1385,Lead Acid_1386,Lead Calcium_1387,Ni Cad_1388,Other_1389</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_BATTERY_MANUFACTURER</lookup_type>
+		<lookup_values>AC Delco_1390,Bosch_1391,Die Hard_1392,Duralast_1393,Excide_1394,Interstate_1395,Yuasa_1396,Other_1397</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_BATTERY_CONDITION</lookup_type>
+		<lookup_values>Good_1398,Corroded_1399,Leaking_1400</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_CONFIRMED_METHOD_OF_MEASUREMENT</lookup_type>
+		<lookup_values>Laser_1401,Tape Drop_1402,Tower Sections_1403</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_YES_NO_OPTION_1</lookup_type>
+		<lookup_values>Yes_1404,No_1405</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_YES_NO_OPTION_2</lookup_type>
+		<lookup_values>Yes_1406,No_1407,NA_1408</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_YES_NO_OPTION_3</lookup_type>
+		<lookup_values>Yes_1409,No_1410,,Unknown_1411</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_MAJOR_MINOR_OPTION</lookup_type>
+		<lookup_values>Major_1412,Minor_1413</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_PASS_FAIL_OPTION</lookup_type>
+		<lookup_values>Pass_1414,Fail_1415</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_PORTHOLES_PORT_COUNTS</lookup_type>
+		<lookup_values>1_1416,2_1417,3_1418,4_1419</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_PORTHOLES_ORIENTATION</lookup_type>
+		<lookup_values>East_1420,West_1421,North_1422,South_1423</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_CARRIER_OBSTRUCT_BEACON</lookup_type>
+		<lookup_values>Tenant1_1424,Tenant2_1425,Other_1426</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_APPURTENANCES_TYPE</lookup_type>
+		<lookup_values>Billboard_1427,Bird Deterrents_1428,County_Equipment_1429,Guy Connection Point_1430,Lightning Rod_1431,Microwave Ice Shield_1432,Non-Operational Lighting Equipment_1433,Stealth Branches_1434,Other_1435</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_TENANT_EQUIPMENT_CONTRACTED_NAME</lookup_type>
+		<lookup_values>Name1_1436,Name2_1437,Name3_1438,Other_1439,Unknown_1440</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_CONTRACT_EQUIPMENT_TYPE</lookup_type>
+		<lookup_values>Type1_1441,Type2_1442,Type3_1443</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_INSTALL_EQUIPMENT_TYPE</lookup_type>
+		<lookup_values>Type1_1444,Type2_1445,Type3_1446</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_CONTRACT_LINE_SIZE</lookup_type>
+		<lookup_values>Size1_1447,Size2_1448,Size3_1449</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_INSTALL_LINE_SIZE</lookup_type>
+		<lookup_values>Size1_1450,Size2_1451,Size3_1452</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_CONTRACT_LINE_TYPE</lookup_type>
+		<lookup_values>Type1_1453,Type2_1454,Type3_1455</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_INSTALL_LINE_TYPE</lookup_type>
+		<lookup_values>Type1_1456,Type2_1457,Type3_1458</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_MOUNT_TYPE</lookup_type>
+		<lookup_values>Type1_1460,Type2_1461,Type3_1462</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_MEASUREMENT_METHOD</lookup_type>
+		<lookup_values>Method1_1463,Method2_1464,Method3_1465</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_GENERATOR_COUNT</lookup_type>
+		<lookup_values>1_1466,2_1467,3_1468,4_1469,5_1470,6_1471,7_1472</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_ATC_GENERATOR_ASSET_STATUS</lookup_type>
+		<lookup_values>Status1_1473,Status2_1474,Status3_1475</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_ATC_GENERATOR_CLASSIFICATION</lookup_type>
+		<lookup_values>class1_1476,class2_1477</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_ATC_GENERATOR_MOUNT</lookup_type>
+		<lookup_values>Mount1_1478,Mount2_1479</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_ATC_GENERATOR_PHASE</lookup_type>
+		<lookup_values>Single Phase_1480,Three Phase_1481</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_ATC_GENERATOR_VOLTAGE</lookup_type>
+		<lookup_values>V1_1482,V2_1483,V3_1484</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_ATC_GENERATOR_AMPERAGE</lookup_type>
+		<lookup_values>A1_1485,A2_1486</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_ATC_GENERATOR_BREAKERS_INSTALLED</lookup_type>
+		<lookup_values>1_1487,2_1488,3_1489,4_1490,5_1491,6_1492,7_1493</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_ATC_GENERATOR_BREAKERS_POSITION</lookup_type>
+		<lookup_values>1_1494,2_1495,3_1496,4_1497,5_1498,6_1499,7_1500</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_ATC_SERVICE_PHASE_TYPE</lookup_type>
+		<lookup_values>Type1_1501,Type2_1502,Type3_1503</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_ATC_SERVICE_VOLTAGE</lookup_type>
+		<lookup_values>V1_1504,V2_1505</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_ATC_SERVICE_AMPERAGE</lookup_type>
+		<lookup_values>A1_1506,A2_1507</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_CUSTOMER_CONNECTED</lookup_type>
+		<lookup_values>C1_1508,C2_1509,C3_1510</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_ATS_NUMBER</lookup_type>
+		<lookup_values>1_1511,2_1512,3_1513,4_1514,5_1515,6_1516,7_1517</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_GENERATOR_BATTERY_LOCATION</lookup_type>
+		<lookup_values>Inside ATC Building_1518,Inside Tenant Building_1519,Outside Tenant Building_1520</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_GENERATOR_BATTERY_TYPE</lookup_type>
+		<lookup_values>Gel Cell_1521,Lead Acid_1522,Lead Calcium_1523,NiCad_1524,Other_1525</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_GENERATOR_BATTERY_CONDITION</lookup_type>
+		<lookup_values>Corroded_1526,Good_1527,Leaking_1528</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_GENERATOR_FUEL_TANK_TYPE</lookup_type>
+		<lookup_values>Above ground_1529,Underground_1530,Belly Tank_1531,Day Tank_1532,Lube Oil tank_1533</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_GENERATOR_FUEL_TYPE</lookup_type>
+		<lookup_values>Diesel_1534,Gasoline_1535,Hydrogen_1536,Hydrogen Fuel cell_1537,Kerosene_1538,Lube Oil_1539,Natural Gas_1540,Propane_1541</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_NON_GENERATOR_FUEL_TANK_LOCATION</lookup_type>
+		<lookup_values>Inside ATC Building_1542,Inside Tenant Building_1543,Outside Tenant Building_1544</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_NON_GENERATOR_FUEL_TANK_STATUS</lookup_type>
+		<lookup_values>Status1_1545,Status2_1546,Status3_1547</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_NON_GENERATOR_FUEL_TANK_TYPE</lookup_type>
+		<lookup_values>Type1_1548,Type2_1549,Type3_1550</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_NON_GENERATOR_FUEL_TYPE</lookup_type>
+		<lookup_values>Diesel_1551,Gasoline_1552,Hydrogen_1553,Hydrogen Fuel cell_1554,Kerosene_1555,Lube Oil_1556,Natural Gas_1557,Propane_1558</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_STRUCTURE_CONTRACTED_TENANT_NAME</lookup_type>
+		<lookup_values>Name1_1559,Name2_1560</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_GROUND_SPACE_PURPOSE_CONTRACTED</lookup_type>
+		<lookup_values>Purpose1_1561,Purpose2_1562</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_STRUCTURE_INSTALLED_TENANT_NAME</lookup_type>
+		<lookup_values>Name1_1563,Name2_1564</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_GROUND_SPACE_PURPOSE_INSTALLED</lookup_type>
+		<lookup_values>Purpose1_1565,Purpose2_1566</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_GENERATOR_CONTRACTED_TENANT_NAME</lookup_type>
+		<lookup_values>Name1_1567,Name2_1568,Unknown_1569,other_1570</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_GENERATOR_CONTRACTED_FUEL_TYPE</lookup_type>
+		<lookup_values>Type1_1571,Type2_1572</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_GENERATOR_INSTALLED_TENANT_NAME</lookup_type>
+		<lookup_values>Name1_1573,Name2_1574,Unknown_1575,other_1576</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_GENERATOR_INSTALLED_FUEL_TYPE</lookup_type>
+		<lookup_values>Type1_1577,Type2_1578</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_GENERATOR_INSTALLED_LOCATION</lookup_type>
+		<lookup_values>Inside ATC building_1579,Inside Tenant building_1580,Outside Tenant building_1581</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_GENERATOR_INSTALLED_TYPE</lookup_type>
+		<lookup_values>Fixed_1582,Portable_1583</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_BATTERY_TENANT_NAME</lookup_type>
+		<lookup_values>Name1_1584,Name2_1585,Unknown_1586,Other_1587</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_TENANT_BATTERY_LOCATION</lookup_type>
+		<lookup_values>Inside ATC building_1588,Inside Tenant building_1589,Outside Tenant building_1590</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_TENANT_BATTERY_TYPE</lookup_type>
+		<lookup_values>Gel Cell_1591,Lead Acid_1592,Lead Calcium_1593,NiCad_1594,Other_1595</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_FUEL_TANK_TENANT_NAME</lookup_type>
+		<lookup_values>Name1_1596,Name2_1597,Name3_1598,Unknown_1599,Other_1600</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_TENANT_FUEL_TANK_LOCATION</lookup_type>
+		<lookup_values>Inside ATC building_1601,Inside Tenant building_1602,Outside Tenant building_1603</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_TENANT_FUEL_TANK_TYPE</lookup_type>
+		<lookup_values>Above Ground_1604,Underground_1605,Belly Tank_1606,Day Tank_1607,Lube Oil Tank_1608</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_TENANT_FUEL_TYPE</lookup_type>
+		<lookup_values>Diesel_1609,Gasoline_1610,Hydrogen_1611,Hydrogen Fuel Cell_1612,Kerosene_1613,Lube Oil_1614,Natural Gas_1615,Propane_1616</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_TOWER_INSPECT_VISIT_TYPE</lookup_type>
+		<lookup_values>Type1_1617,Type2_1618,Type3_1619</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_GUY_ANCHOR_PRESENT_COUNT</lookup_type>
+		<lookup_values>0_1620,1_1621,2_1622,3_1623,4_1624,5_1625,6_1626,7_1627,8_1628</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_TOWER_LIGHTING_INSPECTION_VISIT_TYPE</lookup_type>
+		<lookup_values>Annual_1629,Quarterly_1630,New System Install_1631,Repair And Maintenance Visit_1632,Monitor Install_1633</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_TOWER_NOC</lookup_type>
+		<lookup_values>TWR NOC_1634,Design Energy Alliance_1635,Omnimetrix_1636,Remote Monitoring Service_1637,SPX (Flash National Operations Center)_1638</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_ASSET_TENURE</lookup_type>
+		<lookup_values>3rd Party tower_1639,DAS FIBER_1640,Leased_1641,Managed_1642,No Tower_1643,Owned_1644</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_ASSET_CLASS</lookup_type>
+		<lookup_values>Class1_1645,Class2_1646,Class3_1647</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_ASSET_SOURCE</lookup_type>
+		<lookup_values>Source1_1648,Source2_1649</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_ASSET_OWNER</lookup_type>
+		<lookup_values>Owner1_1650,Owner2_1651</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_BUILD_TYPE</lookup_type>
+		<lookup_values>Type1_1652,Type2_1653,Type3_1654</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_PORTFOLIO</lookup_type>
+		<lookup_values>Portfolio1_1655,Portfolio2_1656</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_ANCHOR_TENANT</lookup_type>
+		<lookup_values>AT1_1657,AT2_1658</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_OPERATIONAL_AREA</lookup_type>
+		<lookup_values>Area1_1659,Area2_1660</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_METER_USER</lookup_type>
+		<lookup_values>Customer1_1661,Customer2_1662,Other_1663,Unknown_1664</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_BATTERY_CONDITION</lookup_type>
+		<lookup_values>Corroded_1665,Good_1666,Leaking_1667</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_CONTROLLER_LOCATION</lookup_type>
+		<lookup_values>Inside ATC shelter_1668,Inside tenant shelter_1669,ATC H-Frame_1670, Tenant H-Frame_1671,Tower_1672,ATC exterior wall_1673,Tenant exterior wall_1674,Other_1675</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_MONITOR_LOCATION</lookup_type>
+		<lookup_values>Inside ATC shelter_1676,Inside tenant shelter_1677,ATC H-Frame_1678,Tenant H-Frame_1679,Tower_1680, ATC exterior wall_1681,Tenant exterior wall_1682,Other_1683</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_POWER_SOURCE</lookup_type>
+		<lookup_values>ATC Meter_1684,Tenant Meter_1685,Solar_1686,Other_1687</lookup_values>
+	</lovValueField>
+
+	<lovValueField>
+		<lookup_type>LOV_US_FUEL_TYPE</lookup_type>
+		<lookup_values>Diesel_1688,Gasoline_1689,Hydrogen_1690,Hydrogen Fuel Cell_1691,Kerosene_1692,Lube Oil_1693,Natural Gas_1694,Propane_1695</lookup_values>
+	</lovValueField>
+
+</lovValueFieldsType>

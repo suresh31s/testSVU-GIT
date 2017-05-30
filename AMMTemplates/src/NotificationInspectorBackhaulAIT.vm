@@ -1,0 +1,25 @@
+<html>
+<head> <title>Notification</title> </head>
+<body>
+<table border="1" cellpadding="3" cellspacing="0" width="800">
+<tbody align="center" style="font-family:verdana; color:purple; background-color:pink">
+<tr>
+<td width="40%">Inspection Question</td>
+<td width="10%">Answer</td>
+<td width="50%">Comments</td>
+</tr>
+</tbody>
+<tbody align="center" style="font-family:verdana; color:blue">
+#foreach($bckAIT in $NotificationInsBackAIT)
+#if ($bckAIT.installationAutherised == "No" || $bckAIT.installationAutherised == "NO")
+<tr>
+<td width="40%">Fiber Installation Authorized?</td>
+<td width="10%">No</td>
+<td width="50%">Unauthorized fiber installation observed during visit. Please contact reporting technician for further clarification</td>
+</tr>
+#end
+#end
+</tbody>
+</table>
+</body>
+</html>

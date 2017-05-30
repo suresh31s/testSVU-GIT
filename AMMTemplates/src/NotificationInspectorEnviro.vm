@@ -1,0 +1,68 @@
+<html>
+<head> <title>Notification</title> </head>
+<body>
+<table border="1" cellpadding="3" cellspacing="0" width="800">
+<tbody align="center" style="font-family:verdana; color:purple; background-color:pink">
+<tr>
+<td width="40%">Inspection Question</td>
+<td width="10%">Answer</td>
+<td width="50%">Comments</td>
+</tr>
+</tbody>
+<tbody align="center" style="font-family:verdana; color:blue">
+#foreach($notFloor in $NotificationFloorList)
+#if ($notFloor.flooringCond == "Significantly Damaged")
+<tr>
+<td width="40%">ATC owned building flooring condition:</td>
+<td width="10%">Significantly Damaged</td>
+<td width="50%">Please contact reporting technician for further clarification</td>
+</tr>
+#end
+#end
+#foreach($notWallType in $NotificationWallType)
+#if ($notWallType.wallTypeCond == "Significantly Damaged")
+<tr>
+<td width="40%">ATC owned building wall covering-treatment condition:</td>
+<td width="10%">Significantly Damaged</td>
+<td width="50%">Please contact reporting technician for further clarification</td>
+</tr>
+#end
+#end
+#foreach($notCeilingType in $NotificationCeilingType)
+#if ($notCeilingType.ceilingCond == "Significantly Damaged")
+<tr>
+<td width="40%">ATC owned building ceiling condition:</td>
+<td width="10%">Significantly Damaged</td>
+<td width="50%">Please contact reporting technician for further clarification</td>
+</tr>
+#end
+#if ($notCeilingType.waterStaining == "Yes")
+<tr>
+<td width="40%">ATC owned building ceiling show evidence of water staining?</td>
+<td width="10%">Yes</td>
+<td width="50%">Please contact reporting technician for further clarification</td>
+</tr>
+#end
+#end
+#foreach($notBat in $NotificationBattery)
+#if ($notBat.batteryCond == "Corroded" || $notBat.batteryCond == "Leaking")
+<tr>
+<td width="40%">Battery condition:</td>
+<td width="10%">$notBat.batteryCond</td>
+<td width="50%">$notBat.batteryCondComment</td>
+</tr>
+#end
+#end
+#foreach($notAsb in $NotificationAsbestos)
+#if ($notAsb.asbestosOps == "Yes")
+<tr>
+<td width="40%">Asbestos Operation Maintenance Plan posted inside building:</td>
+<td width="10%">Yes</td>
+<td width="50%">Asbestos Operation Maintenance Plan posted at time of visit.</td>
+</tr>
+#end
+#end
+</tbody>
+</table>
+</body>
+</html>

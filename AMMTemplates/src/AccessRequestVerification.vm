@@ -1,0 +1,16 @@
+<html>
+	<body>
+		<h3 align="center">  Access Request Verification </h3>
+		<hr/>
+                <p>
+                    Dear $!userFirstName $!userLastName, <br/><br/>
+                    
+                    You have recieived this email as your email address was used to register an OnSite account. <br/><br/>
+                    
+                    Please click <a id="aVerifyEmail" href='$urlAMMExtEmailVerification?country=$country&username=$username'>here</a> to verify your email address. <br/><br/>
+                    
+                    Note that this verification is required before your account will be approved. <br/><br/>
+                    
+                    Please contact your local ATC office for any queries. <br/><br/>
+	</body>
+</html>

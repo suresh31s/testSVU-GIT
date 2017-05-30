@@ -1,0 +1,21 @@
+<html>
+	<body>
+		<h3 align="center"> OnSite Account Approval </h3>
+		<hr/>
+
+		<p align="center">
+		Your OnSite account has been approved. <br/>
+                You have been authorised to audit sites. 
+                <br/><br/>
+		Please <a href="$urlAMMExtLogin">click here</a> to log into OnSite. <br/>
+		Please contact your local ATC Office for any queries.
+		</p>
+		<br/>
+		<br/><br/><br/><br/><br/><br/><br/><br/>
+		<hr/>
+		<p>
+		This is an auto-generated email regarding the status of your case. Please do not reply to this e-mail. <br/>
+		Your case has been reviewed and addressed.
+		</p>
+	</body>
+</html>

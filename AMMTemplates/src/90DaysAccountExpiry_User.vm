@@ -1,0 +1,19 @@
+<html>
+	<body>
+		<h3 align="center">  User Account Expiry </h3>
+		<hr/>
+		<p align="left">
+                Dear "$!userFirstName $!userLastName", <br/><br/>
+                
+                Please note that your ATC Asset Manager Mobile's Access account will expire in $daysleft days. <br/>
+
+                When your account expires, you will not be able to log into asset manager mobile nor synchronise any outstanding audits.<br/>
+
+                Please click on the link below to request account extension. <br/>
+                <a id="aUsrAccounExtension" href='$urlAMMExt90DaysUserAccountExtension?ccode=$!country&u_name=$!userName&err=uAccNrExp'>Link to account extension request </a> <br/> <br/>
+                OR <br/><br/>
+                Please contact AMM support team on AMM@AmericanTower.com if you have any questions.
+
+		</p>
+	</body>
+</html>

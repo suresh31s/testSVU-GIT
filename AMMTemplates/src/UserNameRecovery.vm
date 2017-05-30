@@ -1,0 +1,25 @@
+<html>
+	<body>
+		<h3 align="center">  User Name Recovery </h3>
+		<hr/>
+
+		<p align="center">
+		Your username to login to Asset Manager Mobile is - $userName <br/> <br/>
+
+		You can login to the application using the link below <br/>
+     		<a href=$!urlAMMExtLogin>Login to AMM </a> <br/><br/>
+
+     		Please contact your local ATC Office for any queries. <br/>
+
+
+		</p>
+		<br/>
+		
+		<br/><br/><br/><br/><br/><br/><br/><br/>
+		<hr/>
+		<p>
+		This is an auto-generated email regarding the status of your case. Please do not reply to this e-mail. <br/>
+		Your case has been reviewed and addressed.
+		</p>
+	</body>
+</html>
