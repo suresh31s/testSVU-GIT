@@ -1,5 +1,7 @@
 update  xxgam.atc_gam_m_verification set BATTERY_VOLTAGE_ON	= null, BATTERY_VOLTAGE_OFF = null;
 
+
+--alter
 alter table xxgam.atc_gam_m_verification modify ( BATTERY_VOLTAGE_ON	NUMBER(20,2),BATTERY_VOLTAGE_OFF	NUMBER(20,2));
 ALTER TABLE xxgam.atc_gam_m_verification drop COLUMN MONITOR_LOCATION;
 ALTER TABLE xxgam.atc_gam_m_compound drop COLUMN COMPOUND_WIDTH;
